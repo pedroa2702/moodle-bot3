@@ -1,0 +1,12 @@
+progressbar
+bs4
+pyTelegramBotAPI
+Telethon
+requests
+multivolumefile
+youtube-dl
+mega.py
+emoji
+ujson
+pytz
+tenacity
