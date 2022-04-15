@@ -10,4 +10,4 @@ emoji
 ujson
 pytz
 tenacity
-pathlib2
+pathlib==1.0.1
