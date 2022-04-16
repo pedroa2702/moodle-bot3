@@ -10,7 +10,6 @@ from zipfile import ZipFile , ZipInfo
 import multiFile
 import random
 from bs4 import BeautifulSoup
-from mega import Mega
 import time
 from datetime import datetime
 import pytz
@@ -105,23 +104,6 @@ async def processMy(ev,bot):
     except Exception as e:
                         await bot.send_message(str(e))
 
-
-async def down_mega(bot,ev,text):
-    mega=Mega()
-    msg = await bot.send_message(ev.chat_id,'🛠Procesando Enlace de MEGA...')
-    try:
-        mega.login(email= f'{GMAIL_MEGA}',password= f'{PASS_MEGA}')
-    except:
-        await msg.edit('❗️Error en la cuenta de MEGA❗️')
-    try:    
-        await msg.edit(f'⚙️Descargando...')
-        path=mega.download_url(text)
-        await msg.edit(f'D✅ Descargado {path} con éxito ✅')
-        await process_file(str(path),bot,ev,msg)
-    except:
-        msg.edit('❗️Error en la Descarga❗️')
-        print(traceback.format_exc())    
-
 def req_file_size(req):
     try:
         return int(req.headers['content-length'])
@@ -187,8 +169,6 @@ async def lista(ev,bot,msg):
                 msg = await bot.send_message(ev.chat_id,"⚙️Descargando..."+text)
                 file_name = await bot.download_media(message.message)
                 await process_file(file_name,bot,ev,msg)
-            elif 'mega.nz' in text:
-                await down_mega(bot,ev,text)
             elif 'https' in text or 'http' in text:
                 await upload_to_moodle_url(msg,bot,ev,url=text)       
         except Exception as e:
@@ -287,5 +267,3 @@ async def process(ev: events.NewMessage.Event):
 
 print('App Run...')
 bot.loop.run_forever()
-
-
