@@ -11,8 +11,8 @@ name: moodle-l
 # More info: https://www.okteto.com/docs/reference/manifest/#deploy
 deploy:
   commands:
-    - name: Deploy
-      command: echo 'Replace this line with the proper 'helm' or 'kubectl' commands to deploy your development environment'
+    - name: install dependencies
+      command: pip install -r requirements.txt
 
 # The dependencies section defines other git repositories to be deployed as part of your development environment
 # More info: https://www.okteto.com/docs/reference/manifest/#dependencies
