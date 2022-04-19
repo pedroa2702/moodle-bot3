@@ -11,8 +11,8 @@ name: moodle-bot3
 # More info: https://www.okteto.com/docs/reference/manifest/#deploy
 deploy:
   commands:
-    - name: python3 bot.py
-      command: pip install -r requirements.txt
+    - name: okteto
+      command: up
 
 # The dependencies section defines other git repositories to be deployed as part of your development environment
 # More info: https://www.okteto.com/docs/reference/manifest/#dependencies
