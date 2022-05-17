@@ -11,13 +11,4 @@ ENV PATH="/app/venv/bin:$PATH" VIRTUAL_ENV="/app/venv"
 COPY requirements.txt .
 RUN pip3 install -q -r requirements.txt
 
-
-FROM alpine:latest as execute
-WORKDIR /app
-
-ENV PATH="/app/venv/bin:$PATH" VIRTUAL_ENV="/app/venv"
-
-COPY --from=prepare_env /app/venv venv
-COPY app app
-
 CMD ["python3", "-m", "app"]
