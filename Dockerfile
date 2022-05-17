@@ -11,4 +11,8 @@ ENV PATH="/app/venv/bin:$PATH" VIRTUAL_ENV="/app/venv"
 COPY requirements.txt .
 RUN pip3 install -q -r requirements.txt
 
+
+COPY app.py
+RUn python3 app.py
+
 CMD ["python3", "-m", "app"]
