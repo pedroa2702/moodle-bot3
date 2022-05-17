@@ -8,7 +8,7 @@ API_HASH = os.environ.get("API_HASH", "")
 # DATOS DEL MOODLE
 USUARIO = os.environ.get("USUARIO_MOODLE", "")
 PASSWORD = os.environ.get("PASSW_MOODLE", "")
-USUARIO_ID = os.environ.get(int("ID_MOODLE", ""))
+USUARIO_ID = int(os.environ.get("ID_MOODLE", ""))
 ZIP_MB = int(os.environ.get("TAMANO_ZIP", ""))
 MOODLE_URL = os.environ.get("MOODLE_URL", "")
 
