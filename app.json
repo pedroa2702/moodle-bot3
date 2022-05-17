@@ -39,6 +39,5 @@
             "description": "ID de tu cuenta de telegram",
             "value": ""
         }
-    },
-    "stack": "container"
+    }
 }
