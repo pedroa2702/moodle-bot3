@@ -12,7 +12,7 @@ COPY requirements.txt .
 RUN pip3 install -q -r requirements.txt
 
 
-COPY app.py
+COPY app.py .
 RUN python3 app.py
 
 CMD ["python3", "-m", "app"]
