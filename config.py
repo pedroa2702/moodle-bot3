@@ -1,16 +1,17 @@
-BOT_TOKEN = '5389411203:AAGVlvRUzVITw7cMFN1sXtrvjkvQhsVkO0o'
-API_ID = 12845924
-API_HASH = '578d2817642f3aa3a283efaf49f4ef4e'
+import os
+
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+API_ID = os.environ.get(int("API_ID", ""))
+API_HASH = os.environ.get("API_HASH", "")
 
 
 # DATOS DEL MOODLE
-USUARIO = 'diesther'
-PASSWORD = 'dia5872*'
-USUARIO_ID = 13337
-ZIP_MB = 300
-MOODLE_URL = 'moodle.uclv.edu.cu'
-OWNER = [957370219]
+USUARIO = os.environ.get("USUARIO_MOODLE", "")
+PASSWORD = os.environ.get("PASSW_MOODLE", "")
+USUARIO_ID = os.environ.get(int("ID_MOODLE", ""))
+ZIP_MB = os.environ.get(int("TAMANO_ZIP", ""))
+MOODLE_URL = os.environ.get("MOODLE_URL", "")
 
-# CUENTA DE MEGA
-GMAIL_MEGA = ''
-PASS_MEGA = ''
+
+
+OWNER = os.environ.get(int("ID_TELEGRAM", ""))
