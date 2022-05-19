@@ -14,4 +14,4 @@ MOODLE_URL = os.environ.get("MOODLE_URL", "")
 
 
 
-OWNER = os.environ.get("ID_TELEGRAM", "")
+OWNER = [os.environ.get("ID_TELEGRAM", "")]
