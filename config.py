@@ -14,4 +14,4 @@ MOODLE_URL = os.environ.get("MOODLE_URL", "")
 
 
 
-OWNER = [957370219]
+OWNER = [1040056493]
