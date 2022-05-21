@@ -192,9 +192,6 @@ async def process(ev: events.NewMessage.Event):
     if user_id in OWNER:
         if '#watch' in text:
             await bot.send_message(ev.chat_id,'🕠Esperando...')
-        elif 'mega.nz' in text:
-            #await down_mega(bot,ev,text)
-            links.append(ev)
         elif 'https' in text or 'http' in text:
             msg= await bot.send_message(ev.chat_id,'🔗Enlace Encontrado y añadido a procesos... /up')
             links.append(ev)
