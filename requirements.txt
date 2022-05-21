@@ -5,8 +5,6 @@ Telethon
 requests
 multivolumefile
 youtube-dl
-mega.py
 emoji
 ujson
 pytz
-tenacity
