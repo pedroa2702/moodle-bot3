@@ -28,7 +28,7 @@
             "value": ""
         },
         "TAMANO_ZIPS": {
-            "description": "Tamaño de los zips en el que se picaran las cosas",
+            "description": "Tamaño de los zips en el que se picaran las cosas(da igual el que pongas, se quedara en 300 mb, si quieres cambiarlo hazlo en el config.py, me da hueso arreglarlo :V)",
             "value": ""
         },
         "MOODLE_URL": {
