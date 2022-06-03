@@ -19,7 +19,7 @@
             "description": "Usuario de tu moodle",
             "value": ""
         },
-        "PASSW:MOODLE": {
+        "PASSW_MOODLE": {
             "description": "Contraseña de tu moodle",
             "value": ""
         },
