@@ -226,7 +226,7 @@ async def process(ev: events.NewMessage.Event):
         
         await bot.send_message(ev.chat_id,f'✅ Se inicio correctamente el Bot ✅\n\n❕Usa /help para aprender sobre mis funciones.')
     else:
-        await bot.send_message(ev.chat_id,'❗️Acceso Denegado❗️') 
+        await bot.send_message(ev.chat_id,user_id) 
 
 
 @bot.on(events.NewMessage(pattern='/pro'))
