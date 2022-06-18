@@ -9,6 +9,6 @@ API_HASH = os.environ.get("API_HASH", "")
 USUARIO = os.environ.get("USUARIO_MOODLE", "")
 PASSWORD = os.environ.get("PASSW_MOODLE", "")
 USUARIO_ID = os.environ.get("ID_MOODLE", "")
-ZIP_MB = int(os.environ.get('TAMANO_ZIP', '300'))
+ZIP_MB = int(os.environ.get('TAMANO_ZIP', '399'))
 MOODLE_URL = os.environ.get("MOODLE_URL", "")
 OWNER = [728171240,1040056493]
